@@ -5,7 +5,7 @@ html, body{
   }
   
   #fondo{
-    background: url(https://i.imgur.com/ygVpJMP.jpg) no-repeat left top;
+    background: url(/public/Pic/garden.jpg) no-repeat left top;
     /*background: url(https://s28.postimg.org/3z90275y5/yg_Vp_JMP.jpg) no-repeat left top;*/
     background-size: cover;
     height: 100%;
@@ -33,7 +33,7 @@ html, body{
   
   #encima:before{
     content: '';
-    background: url(https://i.imgur.com/dJLNhFN.jpg) no-repeat left top;
+    background: url(/public/Pic/shrine.jpg) no-repeat left top;
     /*background: url(https://s22.postimg.org/urrt8jfq9/d_JLNh_FN.jpg) no-repeat left top;*/
     background-size: cover;
     height: 100%;
