@@ -5,7 +5,7 @@ html, body{
   }
   
   #fondo{
-    background: url(/public/Pic/garden.jpg) no-repeat left top;
+    background: url(./garden.jpg) no-repeat left top;
     /*background: url(https://s28.postimg.org/3z90275y5/yg_Vp_JMP.jpg) no-repeat left top;*/
     background-size: cover;
     height: 100%;
@@ -27,13 +27,13 @@ html, body{
     -webkit-mask-size: 3000% 100%;
     mask-size: 3000% 100%;
     
-    -webkit-animation: mask-playzero 2s steps(29) infinite;
-    animation: mask-playzero 2s steps(29) infinite;
+    -webkit-animation: mask-playzero 10s steps(29) infinite;
+    animation: mask-playzero 10s steps(29) infinite;
   }
   
   #encima:before{
     content: '';
-    background: url(/public/Pic/shrine.jpg) no-repeat left top;
+    background: url(./shrine.jpg) no-repeat left top;
     /*background: url(https://s22.postimg.org/urrt8jfq9/d_JLNh_FN.jpg) no-repeat left top;*/
     background-size: cover;
     height: 100%;
@@ -43,15 +43,25 @@ html, body{
     left: 0;
   }
   
-  @-webkit-keyframes mask-playzero {
-      from {
+  @-webkit-keyframes mask-playzero { 
+    /* time of one pic */
+    40% { 
       -webkit-mask-position: 0 0;
       -ms-mask-position: 0 0;
       -moz-mask-position: 0 0;
       -o-mask-position: 0 0;
       mask-position: 0 0;
   }
-  to {
+    /* change pic animation */
+      60% {
+        -webkit-mask-position: 100% 0;
+        -ms-mask-position: 100% 0;
+        -moz-mask-position: 100% 0;
+        -o-mask-position: 100% 0;
+        mask-position: 100% 0;
+    }
+    /* time of second pic */
+  100% {
       -webkit-mask-position: 100% 0;
       -ms-mask-position: 100% 0;
       -moz-mask-position: 100% 0;
@@ -61,14 +71,21 @@ html, body{
 }
     
     @keyframes mask-playzero {
-      from {
-      -webkit-mask-position: 0 0;
-      -ms-mask-position: 0 0;
-      -moz-mask-position: 0 0;
-      -o-mask-position: 0 0;
-      mask-position: 0 0;
-  }
-  to {
+      40% {
+        -webkit-mask-position: 0 0;
+        -ms-mask-position: 0 0;
+        -moz-mask-position: 0 0;
+        -o-mask-position: 0 0;
+        mask-position: 0 0;
+    }
+      60% {
+        -webkit-mask-position: 100% 0;
+        -ms-mask-position: 100% 0;
+        -moz-mask-position: 100% 0;
+        -o-mask-position: 100% 0;
+        mask-position: 100% 0;
+    }
+  100% {
       -webkit-mask-position: 100% 0;
       -ms-mask-position: 100% 0;
       -moz-mask-position: 100% 0;
